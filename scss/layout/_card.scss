@@ -1,0 +1,17 @@
+.Card {
+    display: flex;
+    flex-direction: column;
+    width: $fullWidth;
+    &-Body {
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0rem;
+        p {
+            font-size: $fontSizeSmall;
+            font-weight: bold;
+        }
+        &-Buttons {
+            flex-direction: row;
+        }
+    }
+}

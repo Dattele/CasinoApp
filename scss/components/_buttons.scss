@@ -1,0 +1,26 @@
+button {
+    cursor: pointer;
+}
+
+.Button {
+    background-color: $buttonColor;
+    font-size: $fontSizeSmall;
+    color: $buttonTextColor;
+    border: none;
+    height: 3rem;
+    padding: 0rem 1rem;
+    margin: 1rem 0.5rem;
+    @include hoverTransitionBg(.33s); 
+    &:hover, &:focus {
+        background-color: $buttonColorHover;
+    }
+    &-Home, &-Go-Back {
+        margin: 0;
+    }
+}
+
+.Game-Footer-Button {
+    margin: 1.5rem 1.5rem;
+    border: 2px solid $whiteColor;
+    border-radius: 0.75rem;
+}

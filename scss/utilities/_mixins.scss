@@ -1,0 +1,4 @@
+// Hover Transitions
+@mixin hoverTransitionBg($time) {
+    transition: background-color $time ease;
+}

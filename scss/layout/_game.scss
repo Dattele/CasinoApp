@@ -1,0 +1,52 @@
+.Nav-Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-Buttons {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.Game {
+    display: flex;
+    flex-direction: column;
+    &-Body {
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: $fullHeight;
+        height: $fullWidth;
+        &-Popup {
+            background-color: $popUpBgColor;
+            padding: 1.25rem;
+            border: 1px solid $popUpColor;
+            width: 80%;
+            max-width: 40.625rem;
+            text-align: center;
+            p, .Close-Popup {
+                font-size: $fontSizeSmall;
+            }
+        }
+    }
+    &-Header, &-Footer {
+        flex-grow: 1;
+        width: $fullWidth;
+        align-items: center;
+        justify-content: center;
+        &-Images {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &-Buttons {
+            flex-direction: row;
+        }
+        &-Text {
+            p {
+                font-size: $fontSizeSmall;
+                font-weight: bold;
+            }
+        }
+    }
+}

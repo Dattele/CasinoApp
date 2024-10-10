@@ -1,0 +1,110 @@
+/* Over-riding the default content-box setting to a border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #4E9471; }
+
+.Wrapper-Bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.Wrapper {
+  max-width: 45rem; }
+
+.Hide {
+  display: none; }
+
+.Show {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .Card-Body {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0rem; }
+    .Card-Body p {
+      font-size: 1.5rem;
+      font-weight: bold; }
+    .Card-Body-Buttons {
+      flex-direction: row; }
+
+.Nav-Header {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .Nav-Header-Buttons {
+    display: flex;
+    flex-direction: row; }
+
+.Game {
+  display: flex;
+  flex-direction: column; }
+  .Game-Body {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    .Game-Body-Popup {
+      background-color: #fefefe;
+      padding: 1.25rem;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 40.625rem;
+      text-align: center; }
+      .Game-Body-Popup p, .Game-Body-Popup .Close-Popup {
+        font-size: 1.5rem; }
+  .Game-Header, .Game-Footer {
+    flex-grow: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center; }
+    .Game-Header-Images, .Game-Footer-Images {
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .Game-Header-Buttons, .Game-Footer-Buttons {
+      flex-direction: row; }
+    .Game-Header-Text p, .Game-Footer-Text p {
+      font-size: 1.5rem;
+      font-weight: bold; }
+
+button {
+  cursor: pointer; }
+
+.Button {
+  background-color: #333;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  height: 3rem;
+  padding: 0rem 1rem;
+  margin: 1rem 0.5rem;
+  transition: background-color 0.33s ease; }
+  .Button:hover, .Button:focus {
+    background-color: #242424; }
+  .Button-Home, .Button-Go-Back {
+    margin: 0; }
+
+.Game-Footer-Button {
+  margin: 1.5rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 0.75rem; }
+
+.Image {
+  max-width: 12rem;
+  margin: 0.25rem 0.25rem; }
+
+/*# sourceMappingURL=styles.css.map */
