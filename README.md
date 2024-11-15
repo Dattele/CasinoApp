@@ -49,3 +49,6 @@ The **BlackJack** game follows the standard rules:
 1. Improved animations
 2. Sound effects
 3. Give Players customization options
+
+## Announcments
+1. Continuing the development of this project with React
